@@ -1,0 +1,35 @@
+# Python
+.venv*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local state of Ultralytics
+.ultralytics/
+
+# Data, models and results (generated locally)
+/data/
+/models/
+/outputs/
+/reports/
+/third_party/
+*.pt
+*.pth
+*.onnx
+*.npy
+*.log
+*.part
