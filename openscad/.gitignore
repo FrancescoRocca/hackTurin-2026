@@ -1,0 +1,21 @@
+# dependencies and build output
+node_modules/
+dist/
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# environment
+.env
+.env.local
+
+# editor and tooling configuration
+.agents/
+.commandcode/
+.impeccable/
+.kiro/
+skills/
+skills-lock.json
+AGENTS.md
+CLAUDE.md

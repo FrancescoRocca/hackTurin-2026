@@ -1,0 +1,11 @@
+{
+  "body_before_mm3": 81637.60661042681,
+  "body_after_mm3": 49446.92432815901,
+  "volume_reduction_percent": 39.43119307242943,
+  "body_connected_components": 1,
+  "body_nonmanifold_edges": 0,
+  "previous_body_mm3": 68032.41387210952,
+  "reduction_from_previous_body_percent": 27.318580197504637,
+  "body_height_mm": 72,
+  "floor_thickness_mm": 1.5
+}
