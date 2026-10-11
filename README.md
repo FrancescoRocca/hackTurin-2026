@@ -39,6 +39,20 @@ Each folder has its own README with the details.
 - Grove RGB LED Ring, 16 × WS2813 Mini
 - Grove Passive Buzzer
 
+## The enclosure
+
+The node lives in a 3D-printed enclosure designed in OpenSCAD. The camera sits on the chamfered front face, the LCD on the left wall and the LED ring on the right wall. The back is open for USB-C and cabling, and a screwless lid closes the top, engraved with the project logo.
+
+| CAD render | Printed prototype, powered on |
+|---|---|
+| ![CAD render of the enclosure: lid with the engraved larp logo and the LED ring slots](openscad/smart-camera/previews/lid_view.png) | ![Printed prototype running: the LCD shows LARP CROSSWALK and the LED ring rotates green](openscad/smart-camera/photos/smart_camera_prototype_on.jpg) |
+
+*Left: the lid with the engraved logo and the LED ring slots in the side wall. Right: the printed prototype running, with the LCD in its idle state and the LED ring rotating green.*
+
+![Printed prototype with the lid removed, showing the UNO Q, the LCD, the LED ring and the camera](openscad/smart-camera/photos/smart_camera_prototype_open.jpg)
+
+*The same prototype with the lid removed and the electronics mounted.*
+
 ## Getting started
 
 ### Dashboard
