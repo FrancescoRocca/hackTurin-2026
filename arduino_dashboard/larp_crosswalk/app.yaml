@@ -1,0 +1,9 @@
+name: larp_crosswalk
+description: CAMERA0 object detection with importable LED ring, buzzer and LCD effects.
+ports: []
+bricks:
+- arduino:web_ui: {}
+- arduino:dbstorage_sqlstore: {}
+- arduino:object_detection:
+    model: ei-model-1135661-1
+icon: 😀

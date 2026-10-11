@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>larp_crosswalk · Camera preview</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<main>
+<header><h1>larp_crosswalk <span>/ Camera preview</span></h1><span id="status" role="status" aria-live="polite">Connecting…</span></header>
+<div class="workspace">
+<section class="viewer" aria-label="Live camera preview">
+<div class="screen"><canvas id="preview" width="640" height="480" role="img" aria-label="Live CAMERA0 feed with latest detection boxes" hidden></canvas><p id="message">Waiting for the first camera frame…</p></div>
+<div class="toolbar"><span id="camera">CAMERA0 · 640 × 480</span><div class="actions"><button id="pause" type="button">Pause preview</button></div></div>
+</section>
+<aside aria-label="Camera statistics and detection results">
+<section class="statistics" aria-labelledby="stats-heading">
+<h2 id="stats-heading">Recorded passages</h2>
+<p class="hint">Estimated passages tracked on this camera.</p>
+<table class="stats-table"><thead><tr><th scope="col">Object</th><th scope="col">Total</th><th scope="col">Awaiting sync</th></tr></thead>
+<tbody>
+<tr><th scope="row">People</th><td id="total-person">—</td><td id="pending-person">—</td></tr>
+<tr><th scope="row">Cars</th><td id="total-car">—</td><td id="pending-car">—</td></tr>
+<tr><th scope="row">Bicycles</th><td id="total-bicycle">—</td><td id="pending-bicycle">—</td></tr>
+<tr><th scope="row">Motorbikes</th><td id="total-motorcycle">—</td><td id="pending-motorcycle">—</td></tr>
+</tbody></table>
+<p class="stats-help">Awaiting sync includes the current hour.</p>
+<p id="sync-state" class="sync-state">Checking upload status…</p>
+<p id="last-sync" class="stats-help">Last sync: —</p>
+<h3>Latest sightings</h3>
+<table class="stats-table recent-table"><thead><tr><th scope="col">Object</th><th scope="col">Time</th><th scope="col">Confidence</th></tr></thead><tbody id="recent-sightings"><tr><td colspan="3" class="empty">Loading recorded sightings…</td></tr></tbody></table>
+<p class="stats-help">Times shown in your local timezone.</p>
+<div class="stats-footer"><span id="stats-state" role="status" aria-live="polite">Loading statistics…</span><time id="stats-updated"></time></div>
+<div class="database-actions"><button id="clear-database" type="button" aria-describedby="clear-help">Clear board database</button><p id="clear-help" class="stats-help">Permanently deletes local sightings and queued uploads. Server data stays unchanged.</p><p id="clear-result" class="stats-help" role="status" aria-live="polite"></p></div>
+</section>
+<section class="current-detections" aria-labelledby="detections-heading"><h2 id="detections-heading">Detected objects <span id="count">0</span></h2><p class="hint">Boxes show the latest inference result.</p><ul id="detections"><li class="empty">Waiting for detection results.</li></ul><dl><div><dt>Inference time</dt><dd id="latency">—</dd></div><div><dt>Frame age</dt><dd id="age">—</dd></div><div><dt>Detection age</dt><dd id="detection-age">—</dd></div></dl><p class="note">Pausing the preview keeps detection and statistics running on the board.</p></section>
+</aside>
+</div>
+<p id="rates" class="note">Waiting for camera and detection rates…</p>
+<footer>UNO Q · Media Carrier · IMX219</footer>
+</main>
+</body>
+</html>
